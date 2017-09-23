@@ -1,4 +1,4 @@
-package anla.study.LeetCode;
+package anla.study.LeetCode.easy;
 
 public class Problem_1_TwoSum {
 	public static void main(String[] args) {

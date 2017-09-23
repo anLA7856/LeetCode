@@ -1,4 +1,4 @@
-package anla.study.LeetCode;
+package anla.study.LeetCode.medium;
 
 public class Problem_2_AddTwoNumbers {
 	public static void main(String[] args) {
