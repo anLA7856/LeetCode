@@ -1,5 +1,11 @@
 package anla.study.LeetCode.easy;
 
+/**
+ * 这样 finalList 将无法得到预期值，也就是作为result的头节点的作用，而是始终等于result
+ * 
+ * @author anla7856
+ *
+ */
 public class Problem_21_MergeTwoSortedLists_Test {
 	public static void main(String[] args) {
 		Problem_21_MergeTwoSortedLists_Test p = new Problem_21_MergeTwoSortedLists_Test();
