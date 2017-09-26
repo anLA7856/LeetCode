@@ -5,6 +5,7 @@ public class Problem_2_AddTwoNumbers {
 		Problem_2_AddTwoNumbers p = new Problem_2_AddTwoNumbers();
 		ListNode l1 = new ListNode(1);
 		ListNode l1h = l1;
+		l1.next = new ListNode(1);
 
 		ListNode l2 = new ListNode(9);
 		ListNode l2h = l2;
