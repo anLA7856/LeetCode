@@ -100,6 +100,7 @@ public class Problem_21_MergeTwoSortedLists_Test3 {
 		ListNode l = new ListNode(1), lh = new ListNode(2);
 		// 传递l和lh的引用，事实证明传的是地址的复制，l和l2完全没有改变
 		quoteHelp1(lh, l);
+		quoteHelp3(l);
 		System.out.println("lh is:" + lh);
 		System.out.println("l is:" + l);
 	}
@@ -142,8 +143,9 @@ public class Problem_21_MergeTwoSortedLists_Test3 {
 	 * @return
 	 */
 	private ListNode quoteHelp2() {
-		// l2h指向一开始的l，也就是指向l2的头节点
+		
 		ListNode l = new ListNode(2);
+		// l2h指向一开始的l，也就是指向l2的头节点
 		ListNode lh = l;
 		for (int i = 0; i < 6; i++) {
 			l.next = new ListNode(1);
@@ -151,5 +153,9 @@ public class Problem_21_MergeTwoSortedLists_Test3 {
 			l = l.next;
 		}
 		return lh;
+	}
+	
+	private void quoteHelp3(ListNode l){
+		l.val = 5;
 	}
 }
