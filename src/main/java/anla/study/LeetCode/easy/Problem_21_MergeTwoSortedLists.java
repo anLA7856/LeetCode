@@ -4,6 +4,7 @@ package anla.study.LeetCode.easy;
  * 
  * @author anla7856
  *
+ *         参考中最优的答案是用递归，递归，归～
  */
 public class Problem_21_MergeTwoSortedLists {
 	public static void main(String[] args) {

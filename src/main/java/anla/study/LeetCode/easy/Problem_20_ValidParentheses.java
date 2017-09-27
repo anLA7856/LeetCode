@@ -5,6 +5,7 @@ package anla.study.LeetCode.easy;
  * 
  * @author anla7856
  *
+ *         讨论中，左边就进，如果遇到不是左边，那必定可以和栈顶元素匹配，不然就是false。
  */
 public class Problem_20_ValidParentheses {
 	public static void main(String[] args) {
