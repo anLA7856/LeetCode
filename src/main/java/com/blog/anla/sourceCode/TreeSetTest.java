@@ -12,7 +12,7 @@ package com.blog.anla.sourceCode;
  * fail-fast
  */
 
-public class TreeSet<E> extends AbstractSet<E>
+public class TreeSetTest<E> extends AbstractSet<E>
     implements NavigableSet<E>, Cloneable, java.io.Serializable
 {
     /**

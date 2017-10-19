@@ -15,7 +15,7 @@ import java.util.function.UnaryOperator;
  *除了通过迭代器自己 remove或 add方法之外，迭代器将抛出一个 ConcurrentModificationException。
  *。该方法Enumerations返回的不是故障快速的。 elements
  */
-public class Vector<E>
+public class VectorTest<E>
     extends AbstractList<E>
     implements List<E>, RandomAccess, Cloneable, java.io.Serializable
 {

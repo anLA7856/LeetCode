@@ -16,7 +16,7 @@ import java.util.function.Consumer;
  * 如果存入自己定义的k和v，那么注意要重写Comparable和hashcode和equals方法
  */
 
-public class TreeMap<K,V>
+public class TreeMapTest<K,V>
     extends AbstractMap<K,V>
     implements NavigableMap<K,V>, Cloneable, java.io.Serializable
 {
