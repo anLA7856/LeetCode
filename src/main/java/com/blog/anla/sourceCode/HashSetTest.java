@@ -12,7 +12,7 @@ import java.io.InvalidObjectException;
  ×
  */
 
-public class HashSet<E>
+public class HashSetTest<E>
     extends AbstractSet<E>
     implements Set<E>, Cloneable, java.io.Serializable
 {

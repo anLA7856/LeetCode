@@ -30,7 +30,7 @@ import java.util.function.Consumer;
  *
 
  */
-public class WeakHashMap<K,V>
+public class WeakHashMapTest<K,V>
     extends AbstractMap<K,V>
     implements Map<K,V> {
 
@@ -132,7 +132,7 @@ public class WeakHashMap<K,V>
      */
     public WeakHashMap(Map<? extends K, ? extends V> m) {
         this(Math.max((int) (m.size() / DEFAULT_LOAD_FACTOR) + 1,
-                DEFAULT_INITIAL_CAPACITY),
+                DEFAULT_INITIAL_CAPACITY)
              DEFAULT_LOAD_FACTOR);
         putAll(m);
     }
@@ -183,6 +183,7 @@ public class WeakHashMap<K,V>
 
     /**
      * 从ReferenceQueue中取出过期的entry，从WeakHashMap找到对应的entry，逐一删除
+     * 注意，只会把value置为null。
      */
     private void expungeStaleEntries() {
         for (Object x; (x = queue.poll()) != null; ) {

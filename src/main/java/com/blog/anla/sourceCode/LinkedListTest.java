@@ -11,7 +11,7 @@ import java.util.function.Consumer;
  * 实现不是同步的。
  * 同样，它的iterator也是fail-fast的
  */
-public class LinkedList<E>
+public class LinkedListTest<E>
     extends AbstractSequentialList<E>
     implements List<E>, Deque<E>, Cloneable, java.io.Serializable
 {
