@@ -16,7 +16,7 @@ import java.util.function.BiFunction;
  * ConcurrentModificationException。
  * 因此，面对并发修改，迭代器将快速而干净地失败.
  * 
- * Hashtable的键和元素方法返回的枚举 不是故障快速的
+ * Hashtable的键和元素方法返回的枚举 不是fail-fast的
  * 
  * 从Java 2平台v1.2开始，这个类被改造成实现该Map接口，使其成为 Java Collections Framework的成员 。
  * 与新的集合实现不同，Hashtable是同步的。如果不需要线程安全的实现，
@@ -25,7 +25,7 @@ import java.util.function.BiFunction;
  *
 
  */
-public class Hashtable<K,V>
+public class HashTableTest<K,V>
     extends Dictionary<K,V>
     implements Map<K,V>, Cloneable, java.io.Serializable {
 
@@ -254,14 +254,13 @@ public class Hashtable<K,V>
 
     /**
 	 * 将key和value加入到map中，明显标明，
-	 * value不能为null。
+	 * value不能为null。如果key为null，则会包nullPointer
      */
     public synchronized V put(K key, V value) {
         // Make sure the value is not null
         if (value == null) {
             throw new NullPointerException();
         }
-
         // Makes sure the key is not already in the hashtable.
         Entry<?,?> tab[] = table;
         int hash = key.hashCode();
